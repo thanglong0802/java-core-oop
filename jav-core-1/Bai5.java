@@ -5,7 +5,7 @@ public class Bai5 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input: ");
         int n = scanner.nextInt();
-        System.out.println(tinhTongCacSo(n));;
+        System.out.println(tinhTongCacSo(n));
     }
 
     public static int tinhTongCacSo(int n) {
