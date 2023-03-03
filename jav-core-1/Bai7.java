@@ -1,6 +1,6 @@
-import java.util.Scanner;
 
 public class Bai7 {
+//    Viết chương trình liệt kê các số nguyên tố có 6 chữ số chỉ bao gồm các chữ số lẻ.
     public static void main(String[] args) {
         boolean[] isPrime = new boolean[1000000];
         for (int i = 2; i < isPrime.length; i++) {
@@ -19,7 +19,7 @@ public class Bai7 {
             }
         }
     }
-    public static boolean kiemTraSoLe(int n) {
+    private static boolean kiemTraSoLe(int n) {
         while (n > 0) {
             int soDu = n % 10;
             if (soDu % 2 == 0) {

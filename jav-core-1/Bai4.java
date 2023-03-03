@@ -1,10 +1,12 @@
 public class Bai4 {
+//    Viết chương trình in ra các cặp số nguyên tố cùng nhau trong đoạn [a,b]. Với a,b nhập từ
+//    bàn phím.
     public static void main(String[] args) {
         int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17};
         capSoNguyenTo(a);
     }
 
-    public static boolean kiemTraSoNguyenTo(int n) {
+    private static boolean kiemTraSoNguyenTo(int n) {
         if (n < 2) {
             return false;
         }
@@ -16,7 +18,7 @@ public class Bai4 {
         return true;
     }
 
-    public static void capSoNguyenTo(int[] a) {
+    private static void capSoNguyenTo(int[] a) {
         int length = a.length;
         for (int i = 0; i < length; i++) {
             if (kiemTraSoNguyenTo(a[i]) && kiemTraSoNguyenTo(a[i + 1])) {
