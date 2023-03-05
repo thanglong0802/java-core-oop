@@ -5,13 +5,24 @@ public class Bai9 {
 //    Tổng chữ số chia hết cho 10.
     public static void main(String[] args) {
         int count = 0;
-        for (int i = 1000001; i <= 999999999; i++) {
+        long start = System.currentTimeMillis();
+        for (int i = 1000000; i <= 999999999; i++) {
             if (getList(i)) {
                 count++;
-                System.out.println();
+                System.out.println(i);
+
             }
+           i = i + test(i);
         }
-        System.out.println("Tổng " + count + " số");
+        long end = System.currentTimeMillis();
+        System.out.println("Tổng " + count + " số và thời gian " + (end - start) + " ms");
+    }
+    private static int test(int n) {
+        if (n % 10 == 0) {
+            return 5;
+        } else {
+            return 1;
+        }
     }
 
     private static boolean getList(int n) {
