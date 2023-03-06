@@ -1,3 +1,5 @@
+package basic;
+
 public class Bai8a {
 //    Viết chương trình liệt kê tất cả các số thuận nghịch có sáu chữ số (số thuận nghịch là số đối
 //    xứng nhau, ví dụ 123321, 9512159, ...).

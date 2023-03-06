@@ -1,3 +1,5 @@
+package basic;
+
 public class Bai4 {
 //    Viết chương trình in ra các cặp số nguyên tố cùng nhau trong đoạn [a,b]. Với a,b nhập từ
 //    bàn phím.

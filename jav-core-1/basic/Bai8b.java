@@ -1,3 +1,5 @@
+package basic;
+
 public class Bai8b {
 //    Viết chương trình liệt kê các số thuận nghịch có 6 chữ số mà tổng chữ số chia hết cho 10 (ví
 //    dụ số: 721127).

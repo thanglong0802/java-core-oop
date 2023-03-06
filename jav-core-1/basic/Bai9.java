@@ -1,3 +1,5 @@
+package basic;
+
 public class Bai9 {
 //    Viết chương trình liệt kê các số nguyên có 7 đến 9 chữ số thoả mãn cả 3 điều kiện sau:
 //    Là số thuận nghịch.
