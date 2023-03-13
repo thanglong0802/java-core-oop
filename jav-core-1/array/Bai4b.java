@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class Bai5i {
+public class Bai4b {
     public static void main(String[] args) {
         int[] a;
         Scanner scanner = new Scanner(System.in);
@@ -16,15 +16,15 @@ public class Bai5i {
             a[i] = scanner.nextInt();
         }
         for (int i = 0; i < n; i++) {
-            if(!checkSNT(a[i])) {
+            if (!checkSNT(a[i])) {
                 a[i] = 0;
             }
         }
         int kc = Integer.MAX_VALUE;
         int vitri = -1;
         for (int i = 0; i < n; i++) {
-            if(a[i] != 0 && kc > (Math.abs(a[i]-x))) {
-                kc = Math.abs(a[i]-x);
+            if (a[i] != 0 && kc > (Math.abs(a[i] - x))) {
+                kc = Math.abs(a[i] - x);
                 vitri = i;
             }
         }
@@ -36,7 +36,7 @@ public class Bai5i {
             return false;
         }
         for (int j = 2; j <= Math.sqrt(i); j++) {
-            if(i % j == 0){
+            if (i % j == 0) {
                 return false;
             }
         }
